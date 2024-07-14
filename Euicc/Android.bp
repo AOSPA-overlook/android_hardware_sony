@@ -1,5 +1,6 @@
 //
 // Copyright (C) 2023 The LineageOS Project
+//           (C) 2024 Paranoid Android
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -19,23 +20,23 @@ android_app {
         proguard_flags_files: ["proguard.flags"],
     },
     required: [
-        "org.lineageos.euicc.xml",
-        "hidden-api-whitelist-org.lineageos.euicc.xml",
+        "co.aospa.euicc.xml",
+        "hidden-api-whitelist-co.aospa.euicc.xml",
     ],
 }
 
 prebuilt_etc {
     sub_dir: "permissions",
-    name: "org.lineageos.euicc.xml",
-    filename: "org.lineageos.euicc.xml",
-    src: "org.lineageos.euicc.xml",
+    name: "co.aospa.euicc.xml",
+    filename: "co.aospa.euicc.xml",
+    src: "co.aospa.euicc.xml",
     product_specific: true,
 }
 
 prebuilt_etc {
     sub_dir: "sysconfig",
-    name: "hidden-api-whitelist-org.lineageos.euicc.xml",
-    filename: "hidden-api-whitelist-org.lineageos.euicc.xml",
-    src: "hidden-api-whitelist-org.lineageos.euicc.xml",
+    name: "hidden-api-whitelist-co.aospa.euicc.xml",
+    filename: "hidden-api-whitelist-co.aospa.euicc.xml",
+    src: "hidden-api-whitelist-co.aospa.euicc.xml",
     product_specific: true,
 }
