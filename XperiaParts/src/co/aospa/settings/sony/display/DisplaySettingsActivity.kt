@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.settings.device.display
+package co.aospa.settings.sony.display
 
 import android.os.Bundle
 

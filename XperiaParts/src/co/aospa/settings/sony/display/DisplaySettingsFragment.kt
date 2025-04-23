@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.settings.device.display
+package co.aospa.settings.sony.display
 
 import android.app.AlertDialog
 import android.content.Context
@@ -13,7 +13,7 @@ import android.view.View
 import android.widget.CheckBox
 import androidx.preference.*
 
-import org.lineageos.settings.device.R
+import co.aospa.settings.sony.R
 
 const val CREATOR_MODE_KEY = "switchCreatorMode"
 
