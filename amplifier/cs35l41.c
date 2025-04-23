@@ -1545,15 +1545,14 @@ static struct hw_module_methods_t hal_module_methods = {
         .open = amp_module_open,
 };
 
+/* clang-format off */
 amplifier_module_t HAL_MODULE_INFO_SYM = {
-        .common =
-                {
-                        .tag = HARDWARE_MODULE_TAG,
-                        .module_api_version = AMPLIFIER_MODULE_API_VERSION_0_1,
-                        .hal_api_version = HARDWARE_HAL_API_VERSION,
-                        .id = AMPLIFIER_HARDWARE_MODULE_ID,
-                        .name = "Cirrus Logic CS35L41 amplifier HAL",
-                        .author = "The LineageOS Project",
-                        .methods = &hal_module_methods,
-                },
+    .common = {
+        .tag = HARDWARE_MODULE_TAG,
+        .module_api_version = AMPLIFIER_DEVICE_API_VERSION_CURRENT,
+        .hal_api_version = HARDWARE_HAL_API_VERSION,
+        .id = AMPLIFIER_HARDWARE_MODULE_ID,                                          .name = "Cirrus Logic CS35L41 amplifier HAL",
+        .author = "AngeloGioacchino Del Regno <kholk11@gmail.com>",
+        .methods = &hal_module_methods,
+    },
 };
