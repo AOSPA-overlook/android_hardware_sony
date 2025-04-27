@@ -11,6 +11,8 @@ unix_socket_connect(hal_fingerprint_default, tad, tad)
 allow hal_fingerprint_default etsd_device:chr_file rw_file_perms;
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 
+allow hal_fingerprint_default vendor_dmabuf_qseecom_heap_device:chr_file r_file_perms;
+
 allow hal_fingerprint_default vendor_hal_idd_default:binder call;
 allow hal_fingerprint_default vendor_hal_idd_hwservice:hwservice_manager find;
 
